@@ -23,7 +23,7 @@ The game features a progression system where completing pizza orders unlocks new
 
 # Alignment with final rubric
 - **Graphics** - We are aiming for a stylized low-poly environment
-- **Sounds** - variety of sound effects for player feedback
+- **Sounds** - Variety of sound effects for player feedback
 - **Gameplay** - Open world exploration combined with puzzles and mini-games
 - **Fun Factor** - Fun world with engaging gameplay
 - **X-Factor** - Mobile
