@@ -4,7 +4,7 @@ A mobile video game created for CS596 in which the player is tasked with finding
 # Team Members & Roles
 - **Member 1** - Add responsibilities here
 - **Jenny Tran** - Scenes, sprites, sound, part-minigames
-- **Member 3** -
+- **Frederike Alfs** - Player movement, game flow
 - **Member 4** -
 - **Member 5** -
 
