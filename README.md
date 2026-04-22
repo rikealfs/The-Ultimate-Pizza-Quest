@@ -3,7 +3,7 @@ A mobile video game created for CS596 in which the player is tasked with finding
 
 # Team Members & Roles
 - **Amy Tran** - Backgrounds/ tile maps, mini game implementation
-- **Jenny Tran** - Scenes, sprites, sound, part-minigames
+- **Jenny Tran** - Scenes and sprite designs, sound, mini game implementation
 - **Frederike Alfs** - Player movement, game flow
 - **David Soriano** - Character and sound design, minigame implementation
 - **Member 5** - Add responsibilities here
