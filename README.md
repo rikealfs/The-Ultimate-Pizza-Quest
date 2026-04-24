@@ -6,7 +6,7 @@ A mobile video game created for CS596 in which the player is tasked with finding
 - **Jenny Tran** - Scenes and sprite designs, sound, mini game implementation
 - **Frederike Alfs** - Player movement, game flow
 - **David Soriano** - Character and sound design, minigame implementation
-- **Member 5** - Add responsibilities here
+- **Ivan Natividad** - Mobile, minigame implementation 
 
 # Game Description
 This project is a mobile 3D video game developed where players explore a whimsical, low-poly fantasy world to gather ingredients and prepare pizzas. The core gameplay revolves around navigating an open environment, interacting with quirky characters, and completing puzzles and obstacles to obtain specific ingredients listed on a “shopping list.” Players progressively build their pizza by collecting items such as flour, sauce, cheese, and toppings. By the end when all ingredients are collected, we plan to add a minigame where you form all the ingredients together to try and best match an example given to you.
