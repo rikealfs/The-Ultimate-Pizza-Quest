@@ -6,3 +6,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 262473
+  packageName: Low-Poly Medieval Market
+  packageVersion: 
+  assetPath: Assets/Scenes/SampleScene/LightingData.asset
+  uploadId: 0
