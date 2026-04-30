@@ -8,9 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PizzaMinigame.unity
     guid: 8026032c308249c42910a83d9b317504
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: c2b2cc356f7a5417e92d3da97380ae6c
+  - enabled: 1
+    path: Assets/Scenes/DoughWorld.unity
+    guid: e20311c3bdc34498dacd499d8687098f
+  - enabled: 1
+    path: Assets/Scenes/CheeseLvl.unity
+    guid: 740b897fc34e845ea80f4c020db9bdac
+  - enabled: 1
+    path: Assets/Scenes/SauceLVL.unity
+    guid: 073a6690d28b54375b36d21bcddb20c5
+  - enabled: 1
+    path: Assets/Scenes/toppingsLVL.unity
+    guid: fc364c6bac75644848223b848b1d6320
+  - enabled: 1
+    path: Assets/Scenes/resturant.unity
+    guid: 7fbbda06073c647c78d0eefe715f4ab5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
