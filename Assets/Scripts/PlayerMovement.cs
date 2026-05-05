@@ -1,28 +1,47 @@
 using UnityEngine;
 
-//The joystick component uses a prefab from the Joystick Pack
-
 public class PlayerMovement : MonoBehaviour
 {
-    // Speed of the player movement
     public float speed = 5f;
+    public float rotationSpeed = 720f; // How fast the player turns
     public Joystick joystick;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Animator anim;
+    
+    private Rigidbody rb;
+
     void Start()
     {
+        // Grab the Rigidbody from the parent object
+        rb = GetComponent<Rigidbody>();
         
+        // Freeze rotation so the physics engine doesn't tilt the player over
+        rb.freezeRotation = true; 
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Getting directional input from the player
-        float h = joystick.Horizontal; // Input.GetAxis("Horizontal");
-        float v = joystick.Vertical; // Input.GetAxis("Vertical");
+        // 1. Get Input
+        float h = joystick.Horizontal;
+        float v = joystick.Vertical;
+        Vector3 moveDirection = new Vector3(h, 0, v).normalized;
 
-        //Apply movement using Space.World so up is always up, regardless of the player's rotation
-        Vector3 move = new Vector3(h, 0, v);
-        transform.Translate(move * speed * Time.deltaTime, Space.World);
+        // 2. Handle Animations
+        // Use magnitude so it's always a positive number (0 to 1)
+        float moveMagnitude = new Vector2(h, v).magnitude;
+        anim.SetFloat("Speed", moveMagnitude);
 
+        // 3. Handle Movement & Rotation
+        if (moveDirection.magnitude >= 0.1f)
+        {
+            // Calculate where we want to look
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+            
+            // Smoothly rotate toward that direction
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+            // Move the player
+            // We use MovePosition for Rigidbodies to keep physics happy
+            rb.MovePosition(transform.position + moveDirection * speed * Time.deltaTime);
+        }
     }
 }

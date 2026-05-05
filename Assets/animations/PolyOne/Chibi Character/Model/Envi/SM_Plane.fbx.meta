@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f11f0b6ac51a4491e94534d51d4ac4a0
+guid: 04b4f07952c371741a95b5f5a578a833
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -16,13 +16,15 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -80,47 +82,7 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton:
-    - name: Chef(Clone)
-      parentName: 
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Body
-      parentName: Chef(Clone)
-      position: {x: -0, y: -0.47560343, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 104.36134, y: 104.36134, z: 122.28122}
-    - name: hat
-      parentName: Chef(Clone)
-      position: {x: -0, y: 1.4806144, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 104.36134, y: 104.36134, z: 67.97149}
-    - name: Pocket
-      parentName: Chef(Clone)
-      position: {x: -0, y: -0.47560343, z: -0.020452494}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 104.36134, y: 104.36134, z: 122.28122}
-    - name: Glasses
-      parentName: Chef(Clone)
-      position: {x: -0, y: 0, z: 0.010916846}
-      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-      scale: {x: 34.651722, y: 34.651722, z: 34.651722}
-    - name: Eyes
-      parentName: Chef(Clone)
-      position: {x: -0, y: 0, z: 1.061406}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 20.00993, z: 100}
-    - name: Nose
-      parentName: Chef(Clone)
-      position: {x: -0.002171456, y: 0.031119835, z: 1.0020138}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 15.929134, y: 13.991351, z: 16.592493}
-    - name: Tonge
-      parentName: Chef(Clone)
-      position: {x: -0, y: 0.00082990713, z: 0.79823154}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 100, y: 113.11481, z: 100}
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -131,13 +93,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
@@ -145,3 +107,10 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 315595
+  packageName: Lowpoly Character - Chibi
+  packageVersion: 0.0.1
+  assetPath: Assets/PolyOne/Chibi Character/Model/Envi/SM_Plane.fbx
+  uploadId: 751650
