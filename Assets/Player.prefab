@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be3d96aba68c30f4695565b2944f1842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   rotationSpeed: 720
   joystick: {fileID: 0}
   anim: {fileID: 6803204848066436249}
