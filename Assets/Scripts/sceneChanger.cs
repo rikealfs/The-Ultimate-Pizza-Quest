@@ -9,6 +9,7 @@ public class SceneTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // if the player collides with collider, call loadscene() function
         if (other.CompareTag("Player"))
         {
             StartCoroutine(LoadScene());
@@ -17,6 +18,7 @@ public class SceneTrigger : MonoBehaviour
 
     IEnumerator LoadScene()
     {
+        // loads scene with slight delay 
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneToLoad);
     }
