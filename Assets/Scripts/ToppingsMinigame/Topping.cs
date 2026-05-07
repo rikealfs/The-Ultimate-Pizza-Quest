@@ -24,6 +24,6 @@ public class Topping : MonoBehaviour
 
     void HandleCatch()
     {
-        ToppingsGameManager.Instance.AddTopping(type);
+        CollectGameManager.Instance.AddTopping(type);
     }
 }

@@ -8,10 +8,21 @@ public class CollectGameManager : MonoBehaviour
 
     [Header("Game Settings")]
     public float timeLeft = 45f;
-    public bool gameActive = true;
+    public bool gameActive = false;
 
     public Dictionary<ToppingType, int> required = new();
     public Dictionary<ToppingType, int> collected = new();
+
+    public GameObject startButton;
+
+    public void StartGame()
+    {
+        Time.timeScale = 1f;
+        gameActive = true;
+
+        if (startButton != null)
+            startButton.SetActive(false);
+    }
 
     void Awake()
     {

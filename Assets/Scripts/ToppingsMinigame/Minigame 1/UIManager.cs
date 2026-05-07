@@ -58,7 +58,7 @@ public class UIManager : MonoBehaviour
 
     void Update()
 {
-    var gm = ToppingsGameManager.Instance;
+    var gm = CollectGameManager.Instance;
     if (gm == null) return;
 
     timerText.text = "Time: " + Mathf.Ceil(gm.timeLeft);
@@ -77,8 +77,8 @@ void UpdateAllIngredients()
 
 void UpdateIngredientUI(ToppingType type, TextMeshProUGUI text)
 {
-    int required = ToppingsGameManager.Instance.GetRequired(type);
-    int collected = ToppingsGameManager.Instance.GetCollected(type);
+    int required = CollectGameManager.Instance.GetRequired(type);
+    int collected = CollectGameManager.Instance.GetCollected(type);
 
     int remaining = Mathf.Max(0, required - collected);
 
@@ -295,6 +295,6 @@ IEnumerator FlashRoutine(Color color, float duration)
 
     public void GoToMainWorld()
     {
-        SceneManager.LoadScene("MainWorld");
+        SceneManager.LoadScene("ToppingStartingHub");
     }
 }

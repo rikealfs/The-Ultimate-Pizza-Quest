@@ -13,7 +13,7 @@ public class ToppingSpawner : MonoBehaviour
 
     void Spawn()
     {
-        if (!ToppingsGameManager.Instance.gameActive) return;
+        if (!CollectGameManager.Instance.gameActive) return;
 
         float x = Random.Range(-xRange, xRange);
         Vector3 pos = new Vector3(x, 6f, 0);

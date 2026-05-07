@@ -85,7 +85,7 @@ public class SortingUIManager : MonoBehaviour
 
     public void GoToMainWorld()
     {
-        SceneManager.LoadScene("MainWorld");
+        SceneManager.LoadScene("ToppingStartingHub");
     }
 
     public void PlayCorrectSound()

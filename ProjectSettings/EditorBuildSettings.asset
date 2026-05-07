@@ -5,24 +5,36 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PizzaMinigame.unity
     guid: 8026032c308249c42910a83d9b317504
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DoughWorld.unity
     guid: e20311c3bdc34498dacd499d8687098f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CheeseLvl.unity
     guid: 740b897fc34e845ea80f4c020db9bdac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SauceLVL.unity
     guid: 073a6690d28b54375b36d21bcddb20c5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/toppingsLVL.unity
     guid: fc364c6bac75644848223b848b1d6320
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/resturant.unity
     guid: 7fbbda06073c647c78d0eefe715f4ab5
+  - enabled: 1
+    path: Assets/Scenes/ToppingStartingHub.unity
+    guid: b774b847bb28442268662e00c6f57cf5
+  - enabled: 1
+    path: Assets/Scenes/ToppingMinigame.unity
+    guid: 93fa57cab9146496085e1d01e5d7ba17
+  - enabled: 1
+    path: Assets/Scenes/ToppingMinigame2.unity
+    guid: aed453853ccc4418093f5191f23c6f8f
+  - enabled: 1
+    path: Assets/Scenes/ToppingChoosingScene.unity
+    guid: 49c7dccf7048b47bcb90a46d09576067
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
