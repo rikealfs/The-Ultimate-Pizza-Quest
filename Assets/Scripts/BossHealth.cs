@@ -26,6 +26,9 @@ public class BossHealth : MonoBehaviour
     // to show when you win
     [SerializeField] private GameObject winPanel;
 
+    [SerializeField] private AudioClip victory;
+    [SerializeField] private AudioSource sfx;
+
     //trigger phase two once only
     private bool phaseTwoTrigger = false;
 
@@ -164,6 +167,12 @@ public class BossHealth : MonoBehaviour
             // actually show win panel 
             winPanel.SetActive(true);
             Debug.Log("Win panel activated");
+
+            // victory sounddddd
+            if(sfx != null && victory != null)
+            {
+                sfx.PlayOneShot(victory);
+            }
         }
     }
 
