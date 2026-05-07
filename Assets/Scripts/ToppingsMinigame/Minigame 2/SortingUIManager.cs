@@ -80,6 +80,7 @@ public class SortingUIManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Debug.Log("BUTTON CLICK WORKS");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 

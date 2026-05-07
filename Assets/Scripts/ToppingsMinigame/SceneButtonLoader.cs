@@ -13,4 +13,8 @@ public class SceneButtonLoader : MonoBehaviour
     {
         SceneManager.LoadScene("ToppingMinigame2");
     }
+    public void LoadChoosing()
+    {
+        SceneManager.LoadScene("ToppingChoosingScene");
+    }
 }
