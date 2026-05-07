@@ -4,6 +4,7 @@ using TMPro;
 
 public class DialogueUI : MonoBehaviour
 {
+    
     public GameObject panel;
     public TextMeshProUGUI dialogueText;
 
@@ -12,11 +13,12 @@ public class DialogueUI : MonoBehaviour
     private string currentText;
     private bool isTyping;
 
+    //displays typing text and the npcs name 
     public void ShowDialogue(string speakerName, string text)
     {
         panel.SetActive(true);
 
-        nameText.text = speakerName; // 👈 NEW
+        nameText.text = speakerName; 
         currentText = text;
 
         if (typingCoroutine != null)
@@ -30,6 +32,7 @@ public class DialogueUI : MonoBehaviour
         dialogueText.text = "";
         isTyping = true;
 
+        // adds each letter individually to the displayed text string to create a typing affect 
         foreach (char c in text)
         {
             dialogueText.text += c;
@@ -39,7 +42,7 @@ public class DialogueUI : MonoBehaviour
         isTyping = false;
     }
 
-    // Skip button calls this
+    // Skips over the talking/ typewriter animation in dialogue box
     public void SkipText()
     {
         if (isTyping)
@@ -50,7 +53,7 @@ public class DialogueUI : MonoBehaviour
         }
     }
 
-    // Exit button calls this
+    // Makes dialogue box invisible when clicked
     public void HideDialogue()
     {
         panel.SetActive(false);

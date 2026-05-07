@@ -26,6 +26,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CheeseMinigame.unity
     guid: a6eb141571d1440ba9bb02812e8f7472
+  - enabled: 1
+    path: Assets/Scenes/ToppingStartingHub.unity
+    guid: b774b847bb28442268662e00c6f57cf5
+  - enabled: 1
+    path: Assets/Scenes/ToppingMinigame.unity
+    guid: 93fa57cab9146496085e1d01e5d7ba17
+  - enabled: 1
+    path: Assets/Scenes/ToppingMinigame2.unity
+    guid: aed453853ccc4418093f5191f23c6f8f
+  - enabled: 1
+    path: Assets/Scenes/ToppingChoosingScene.unity
+    guid: 49c7dccf7048b47bcb90a46d09576067
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

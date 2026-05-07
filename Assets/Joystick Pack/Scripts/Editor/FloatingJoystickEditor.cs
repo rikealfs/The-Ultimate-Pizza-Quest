@@ -7,7 +7,7 @@ using UnityEditor;
 public class FloatingJoystickEditor : JoystickEditor
 {
     public override void OnInspectorGUI()
-    {
+    { //just for rendering 
         base.OnInspectorGUI();
 
         if (background != null)

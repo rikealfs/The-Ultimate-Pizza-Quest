@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6200321369896703073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 292955570289709523, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1163764424104091271, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749970912322490137, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_Size.x
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749970912322490137, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_Size.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749970912322490137, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 26.666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 5749970912322490137, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 26.666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480622649723797768, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_Name
+      value: BellPepper
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480622649723797768, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_TagString
+      value: Ingredient
+      objectReference: {fileID: 0}
+    - target: {fileID: 7253478395957577265, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 966f42f5780bd419a95fb473700ff605, type: 3}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3936377
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.7119294
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8133048983293391195, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: -358571601560824856, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6fa8a6fe4ff154b309829b087b75f36a, type: 3}

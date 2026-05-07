@@ -8,7 +8,7 @@ public class FloatingJoystick : Joystick
     protected override void Start()
     {
         base.Start();
-        background.gameObject.SetActive(false);
+        background.gameObject.SetActive(false); // makes joystick invisible 
     }
 
     public override void OnPointerDown(PointerEventData eventData)
