@@ -29,6 +29,9 @@ public class BossHealth : MonoBehaviour
     [SerializeField] private AudioClip victory;
     [SerializeField] private AudioSource sfx;
 
+    // hit sound
+    [SerializeField] private AudioClip hit;
+
     //trigger phase two once only
     private bool phaseTwoTrigger = false;
 
@@ -53,6 +56,11 @@ public class BossHealth : MonoBehaviour
     {
         // take hp depending on how much dmg we do 
         currentHP -= dmg;
+
+        if(sfx != null && hit != null)
+        {
+            sfx.PlayOneShot(hit, 0.3f);
+        }
         
         // your dead big bro stop spamming voicelines
         if(isDead)

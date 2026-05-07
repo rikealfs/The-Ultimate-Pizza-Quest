@@ -21,6 +21,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private AudioClip defeat;
     [SerializeField] private AudioSource sfx;
 
+    // FAH
+    [SerializeField] private AudioClip hit;
+
     private bool isDead = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,6 +49,12 @@ public class PlayerHealth : MonoBehaviour
         }
         
         currentHP -= dmg;
+
+        // hit the FAHHH
+        if(sfx != null && hit != null)
+        {
+            sfx.PlayOneShot(hit, 0.7f);
+        }
 
         // update hp bar
         if(hpBar != null)
