@@ -12191,12 +12191,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 196692681061457965, guid: ac80d152f0e474be68837912ef3e35d8, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 196692681061457965, guid: ac80d152f0e474be68837912ef3e35d8, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 2146158083}
     - target: {fileID: 196692681061457965, guid: ac80d152f0e474be68837912ef3e35d8, type: 3}
       propertyPath: rotationSpeed
-      value: 300
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 270825913212116057, guid: ac80d152f0e474be68837912ef3e35d8, type: 3}
       propertyPath: m_Name
