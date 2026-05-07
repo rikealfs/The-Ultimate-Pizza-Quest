@@ -56,4 +56,12 @@ public class GameProgressManager : MonoBehaviour
         sortingDone = true;
         sortedScore = score;
     }
+    public void CompleteChoose(int mushroomCount, int pepperoniCount, int pepperCount, int tickets)
+    {
+        // choosingDone = true;
+        this.mushroomCount = mushroomCount;
+        this.pepperoniCount = pepperoniCount;
+        this.pepperCount = pepperCount;
+        this.tickets = tickets;
+    }
 }

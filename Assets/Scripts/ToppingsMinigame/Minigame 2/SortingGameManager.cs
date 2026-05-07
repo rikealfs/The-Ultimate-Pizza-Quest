@@ -70,11 +70,11 @@ if (ui != null)
             ui.ShowEndScreen(win);
         }
 
-        Debug.Log(win ? "YOU WIN!" : "YOU LOSE!");
+        Debug.Log(win ? "YOU WIN! +3 tickets" : "YOU LOSE! +1 ticket");
 
         if (win)
         {
-            GameProgressManager.Instance.tickets += 2;
+            GameProgressManager.Instance.tickets += 3;
         }
         else
         {

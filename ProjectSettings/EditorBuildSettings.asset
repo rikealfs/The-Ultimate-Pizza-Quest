@@ -23,7 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/resturant.unity
     guid: 7fbbda06073c647c78d0eefe715f4ab5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CheeseMinigame.unity
     guid: a6eb141571d1440ba9bb02812e8f7472
   - enabled: 1

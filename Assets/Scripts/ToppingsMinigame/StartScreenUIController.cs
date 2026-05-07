@@ -1,13 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class StartScreenUIController : MonoBehaviour
 {
     public Button collectButton;
     public Button sortButton;
 
+    public TextMeshProUGUI ticketText;
+
+    int tickets;
+
     void Start()
     {
+        tickets = GameProgressManager.Instance.tickets;
         UpdateUI();
     }
 
@@ -20,6 +26,7 @@ public class StartScreenUIController : MonoBehaviour
     {
         var gp = GameProgressManager.Instance;
         if (gp == null) return;
+        
 
         // Collect always available
         collectButton.interactable = true;
@@ -28,5 +35,6 @@ public class StartScreenUIController : MonoBehaviour
         sortButton.interactable = gp.sortingUnlocked;
 
         sortButton.image.color = gp.sortingUnlocked ? Color.white : Color.gray;
+
     }
 }

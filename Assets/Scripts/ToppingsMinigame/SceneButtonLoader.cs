@@ -17,4 +17,8 @@ public class SceneButtonLoader : MonoBehaviour
     {
         SceneManager.LoadScene("ToppingChoosingScene");
     }
+    public void LoadMainWorld()
+    {
+        SceneManager.LoadScene("toppingsLVL");
+    }
 }

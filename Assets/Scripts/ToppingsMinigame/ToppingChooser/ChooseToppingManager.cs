@@ -11,10 +11,12 @@ public class ChooseToppingManager : MonoBehaviour
     public TextMeshProUGUI pepperoniText;
     public TextMeshProUGUI pepperText;
 
-
     public Button mushroomAddButton;
     public Button pepperoniAddButton;
     public Button pepperAddButton;
+
+    public AudioSource audioSource;
+    public AudioClip clickSound;
 
     int tickets;
 
@@ -25,19 +27,17 @@ public class ChooseToppingManager : MonoBehaviour
     void Start()
     {
         tickets = GameProgressManager.Instance.tickets;
-        // tickets = 2;
         UpdateUI();
     }
 
     void UpdateUI()
     {
-        ticketText.text =  tickets.ToString();
+        ticketText.text = tickets.ToString();
 
         mushroomText.text = mushroom.ToString();
-        pepperoniText.text =  pepperoni.ToString();
-        pepperText.text =  pepper.ToString();
+        pepperoniText.text = pepperoni.ToString();
+        pepperText.text = pepper.ToString();
 
-       
         bool canAdd = tickets > 0;
 
         mushroomAddButton.interactable = canAdd;
@@ -45,13 +45,22 @@ public class ChooseToppingManager : MonoBehaviour
         pepperAddButton.interactable = canAdd;
     }
 
-    
+    void PlayClickSound()
+    {
+        if (audioSource != null && clickSound != null)
+        {
+            audioSource.pitch = Random.Range(0.95f, 1.05f);
+            audioSource.PlayOneShot(clickSound);
+        }
+    }
+
     public void AddMushroom()
     {
         if (tickets <= 0) return;
 
         mushroom++;
         tickets--;
+        PlayClickSound();
         UpdateUI();
     }
 
@@ -61,16 +70,17 @@ public class ChooseToppingManager : MonoBehaviour
 
         mushroom--;
         tickets++;
+        PlayClickSound();
         UpdateUI();
     }
 
-    
     public void AddPepperoni()
     {
         if (tickets <= 0) return;
 
         pepperoni++;
         tickets--;
+        PlayClickSound();
         UpdateUI();
     }
 
@@ -80,16 +90,17 @@ public class ChooseToppingManager : MonoBehaviour
 
         pepperoni--;
         tickets++;
+        PlayClickSound();
         UpdateUI();
     }
 
-    
     public void AddPepper()
     {
         if (tickets <= 0) return;
 
         pepper++;
         tickets--;
+        PlayClickSound();
         UpdateUI();
     }
 
@@ -99,16 +110,18 @@ public class ChooseToppingManager : MonoBehaviour
 
         pepper--;
         tickets++;
+        PlayClickSound();
         UpdateUI();
     }
 
-    // Confirm selection
     public void Confirm()
     {
-        GameProgressManager.Instance.mushroomCount = mushroom;
-        GameProgressManager.Instance.pepperoniCount = pepperoni;
-        GameProgressManager.Instance.pepperCount = pepper;
+        // GameProgressManager.Instance.mushroomCount = mushroom;
+        // GameProgressManager.Instance.pepperoniCount = pepperoni;
+        // GameProgressManager.Instance.pepperCount = pepper;
 
-        SceneManager.LoadScene("ToppingStartingHub"); 
+        GameProgressManager.Instance.CompleteChoose(mushroom, pepperoni, pepper, tickets);
+
+        SceneManager.LoadScene("ToppingStartingHub");
     }
 }
