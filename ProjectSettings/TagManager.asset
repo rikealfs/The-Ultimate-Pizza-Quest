@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Ground
+  - Boss
+  - BossBullets
+  - Bullets
   - Ingredient
   layers:
   - Default
