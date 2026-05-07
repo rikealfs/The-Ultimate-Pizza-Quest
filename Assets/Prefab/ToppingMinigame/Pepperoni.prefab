@@ -13,6 +13,10 @@ PrefabInstance:
       value: Pepperoni
       objectReference: {fileID: 0}
     - target: {fileID: 1927964725765288875, guid: 146e0a5f12f1340baa20709de20366ed, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1927964725765288875, guid: 146e0a5f12f1340baa20709de20366ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -54,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976509549367427658, guid: 146e0a5f12f1340baa20709de20366ed, type: 3}
       propertyPath: m_Radius
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5112206698489208953, guid: 146e0a5f12f1340baa20709de20366ed, type: 3}
       propertyPath: m_Sprite
