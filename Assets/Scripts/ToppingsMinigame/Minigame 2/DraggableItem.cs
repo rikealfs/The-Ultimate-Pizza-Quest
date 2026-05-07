@@ -81,6 +81,7 @@ public class DraggableItem : MonoBehaviour
                     if (ui != null)
                     {
                         ui.ShowFloatingText(transform.position, "+10", Color.green);
+                        ui.PlayCorrectSound();
                     }
 
                     if (SortingGameManager.Instance != null)
@@ -100,6 +101,7 @@ public class DraggableItem : MonoBehaviour
                     if (ui != null)
                     {
                         ui.ShowFloatingText(transform.position, "-5", Color.red);
+                        ui.PlayWrongSound(); 
                     }
 
                     // UIManager ui = FindFirstObjectByType<UIManager>();
