@@ -22,4 +22,9 @@ public class SceneTrigger : MonoBehaviour
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(sceneToLoad);
     }
+    
+    public void PlayGame()
+    { // for the starting main menu button to bring players to first scene
+        SceneManager.LoadScene("DoughWorld");
+    }
 }
