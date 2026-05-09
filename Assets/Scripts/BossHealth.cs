@@ -26,6 +26,12 @@ public class BossHealth : MonoBehaviour
     // to show when you win
     [SerializeField] private GameObject winPanel;
 
+    [SerializeField] private AudioClip victory;
+    [SerializeField] private AudioSource sfx;
+
+    // hit sound
+    [SerializeField] private AudioClip hit;
+
     //trigger phase two once only
     private bool phaseTwoTrigger = false;
 
@@ -50,6 +56,11 @@ public class BossHealth : MonoBehaviour
     {
         // take hp depending on how much dmg we do 
         currentHP -= dmg;
+
+        if(sfx != null && hit != null)
+        {
+            sfx.PlayOneShot(hit, 0.3f);
+        }
         
         // your dead big bro stop spamming voicelines
         if(isDead)
@@ -164,6 +175,12 @@ public class BossHealth : MonoBehaviour
             // actually show win panel 
             winPanel.SetActive(true);
             Debug.Log("Win panel activated");
+
+            // victory sounddddd
+            if(sfx != null && victory != null)
+            {
+                sfx.PlayOneShot(victory);
+            }
         }
     }
 

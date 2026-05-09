@@ -18,6 +18,12 @@ public class PlayerHealth : MonoBehaviour
     // used so the boss will stop attacking as soon as game over happens
     [SerializeField] private BossAttack bossAttack;
 
+    [SerializeField] private AudioClip defeat;
+    [SerializeField] private AudioSource sfx;
+
+    // FAH
+    [SerializeField] private AudioClip hit;
+
     private bool isDead = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +49,12 @@ public class PlayerHealth : MonoBehaviour
         }
         
         currentHP -= dmg;
+
+        // hit the FAHHH
+        if(sfx != null && hit != null)
+        {
+            sfx.PlayOneShot(hit, 0.7f);
+        }
 
         // update hp bar
         if(hpBar != null)
@@ -75,6 +87,12 @@ public class PlayerHealth : MonoBehaviour
         if(bossAttack != null)
         {
             bossAttack.setPause(true);
+        }
+
+        // death sound of plauer, lose -> fUnny
+        if(sfx != null && defeat != null)
+        {
+            sfx.PlayOneShot(defeat);
         }
 
         // game over panel
