@@ -25,6 +25,6 @@ public class SceneTrigger : MonoBehaviour
     
     public void PlayGame()
     { // for the starting main menu button to bring players to first scene
-        SceneManager.LoadScene("DoughWorld");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
